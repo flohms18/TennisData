@@ -1,4 +1,5 @@
-def hello():
-    print("Hello!")
+import pandas as pd
 
-hello()
+df = pd.read_csv('AtpSeason2024.csv')
+
+print(df)
