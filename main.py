@@ -1,6 +1,11 @@
 import pandas as pd
 
-df = pd.read_csv('AptSeason/AtpSeason2024.csv')
-df = df[df['winner_name'] == 'Rafael Nadal'] 
+year = input("Select year to analyse please: YYYY ")
 
-print(df)
+df = pd.read_csv('AptSeason/atp_matches_' + year + '.csv')
+
+rg = df[df['tourney_name'] == 'Roland Garros']
+
+
+
+print(rg)
