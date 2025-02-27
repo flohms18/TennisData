@@ -9,7 +9,7 @@ for x in range(2000,2025):
     df = pd.read_csv('AptSeason/atp_matches_' + str(x) + '.csv')
     Nadal = df[(df['winner_name'] == P1Name) & (df['loser_name'] == P2Name)]
     Djokovic = df[(df['winner_name'] == P2Name) & (df['loser_name'] == P1Name)]
-    if Nadal.any().any() == True or Djokovic.any().any() == True :
+    if Nadal.values.any() == True or Djokovic.values.any() == True :
 
         CountP1 =+ len(Nadal)
         CountP2 =+ len(Djokovic)
