@@ -1,7 +1,7 @@
 import pandas as pd
 
-P1Name = "Rafael Nadal"
-P2Name = "Novak Djokovic"
+P1Name = input("Write the Name for P1 ")
+P2Name = input("Write the Name for P2 ")
 TotalP1 = 0
 TotalP2 = 0
 
