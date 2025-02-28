@@ -10,7 +10,6 @@ for x in range(2000,2025):
     Nadal = df[(df['winner_name'] == P1Name) & (df['loser_name'] == P2Name)]
     Djokovic = df[(df['winner_name'] == P2Name) & (df['loser_name'] == P1Name)]
     if Nadal.values.any() == True or Djokovic.values.any() == True :
-
         CountP1 =+ len(Nadal)
         CountP2 =+ len(Djokovic)
         print(f"In {x} {P1Name} won {CountP1} times, {P2Name} won {CountP2} times !")
