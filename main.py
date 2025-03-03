@@ -16,7 +16,7 @@ for x in range(2000,2025):
         TotalP1 += len(Player1)
         TotalP2 += len(Player2)
     else :
-        print("Check player's spelling! ")
+        print("Check players' spelling! ")
         break
 print(f"{P1Name} won {TotalP1} times, while {P2Name} won {TotalP2} times !")
 
